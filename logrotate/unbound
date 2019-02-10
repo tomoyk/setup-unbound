@@ -1,0 +1,13 @@
+/var/log/unbound
+{
+        rotate 30
+        daily
+        copytruncate
+        nocompress
+        olddir unbound.old
+        su syslog adm
+        postrotate
+                /usr/lib/rsyslog/rsyslog-rotate
+        endscript
+}
+
