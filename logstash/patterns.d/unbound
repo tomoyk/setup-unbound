@@ -1,0 +1,2 @@
+PATTERN %{SYSLOGTIMESTAMP:timestamp} %{SYSLOGHOST:logsource} %{SYSLOGPROG:prog}: \[%{INT:pid}:%{INT:tid}\] %{LOGLEVEL:loglevel}: %{IP:ip_src} %{HOSTNAME:domain} %{WORD:record} %{GREEDYDATA}
+
